@@ -7,7 +7,7 @@
 
 
 <div class="container mt-5 p-5" style="width:800px; border-radius:10px;">
-	<form action="${ctx}/memberInsert.do" method="post" class="border m-5 p-5" name="joinForm">
+	<form action="memberInsert.do" method="post" class="border m-5 p-5" name="joinForm">
         
       <legend>회원가입</legend>
       
@@ -41,19 +41,10 @@
 			<input class="form-control mb-2" type="text" name="name" placeholder="이름을 입력하세요">
         </div>
         
-        <div class="box2">
-          <div><label>나이:</label></div>
-			<input class="form-control mb-2" type="text" name="age" placeholder="만 21세이상부터 가입 가능">
-        </div>
-        
 		
 		<div class="text-center mt-3">
 		<!-- <input type="button" value="회원가입" class="btn btn-primary" onclick="inputChk()"> -->
-		<button type='button' onclick="inputChk()" >가입</button>
-		<button type='button' onclick="inputChk()" >
-			<a href="${ctx}">취소</a>
-		</button>
-		
+		<button class="btn btn-primary">가입</button>
 		</div>
         
       </form>
